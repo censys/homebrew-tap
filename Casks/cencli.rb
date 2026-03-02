@@ -3,7 +3,7 @@ cask "cencli" do
   name "cencli"
   desc "Censys CLI"
   homepage "https://github.com/censys/cencli"
-  version "1.0.3"
+  version "1.0.4"
 
   livecheck do
     skip "Auto-generated on release."
@@ -17,12 +17,12 @@ cask "cencli" do
     on_intel do
       url "https://github.com/censys/cencli/releases/download/v#{version}/cencli_#{version}_darwin_amd64.tar.gz",
         verified: "github.com/censys/cencli/"
-      sha256 "b25654d1df890621f4c2eadf6e5afab98338f05091a8f967b6550202f06e2da7"
+      sha256 "4d0739c32e89be86fb3e35678191f5c57d1bbe9d2f947db25c6b42d691355be8"
     end
     on_arm do
       url "https://github.com/censys/cencli/releases/download/v#{version}/cencli_#{version}_darwin_arm64.tar.gz",
         verified: "github.com/censys/cencli/"
-      sha256 "da3b8471e906c2215b568466967a73be278a09d16e6e9318c05ec77aa3634d59"
+      sha256 "22d3663da5426be0966f725d9132adab0eef79253fe4da783bdd22a32b65a730"
     end
   end
 
@@ -30,12 +30,12 @@ cask "cencli" do
     on_intel do
       url "https://github.com/censys/cencli/releases/download/v#{version}/cencli_#{version}_linux_amd64.tar.gz",
         verified: "github.com/censys/cencli/"
-      sha256 "09e2ef9437748f19927cb1adbfd0bf82a14a87fca6c547bee54322c8fce48fad"
+      sha256 "b5178b9197571d3578aa6bb495144defb0ef9af66cc8dc03ff2edc6471361c6a"
     end
     on_arm do
       url "https://github.com/censys/cencli/releases/download/v#{version}/cencli_#{version}_linux_arm64.tar.gz",
         verified: "github.com/censys/cencli/"
-      sha256 "5864b76204eda58d5f6bc8833803a0ff461d514d1de779a9d2c3904a8aafdb0e"
+      sha256 "5d994ab6ac984bde5de76f0cd03eb5cd193245161feb6b8982141562106715ae"
     end
   end
 
