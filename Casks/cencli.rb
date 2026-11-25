@@ -35,7 +35,7 @@ cask "cencli" do
   bash_completion "completions/censys.bash"
   zsh_completion "completions/_censys"
 
-  postflight do
+  postflight_steps do
     if OS.mac?
       system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{staged_path}/censys"]
     end
